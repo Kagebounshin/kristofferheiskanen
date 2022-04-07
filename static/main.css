@@ -26,23 +26,41 @@ header nav a {
   margin-left: 0.7rem;
   background: yellow;
   font-weight: 700;
+  border-radius: 2%;
 }
 
 main {
   min-height: 100vh;
   background-color: white;
 }
-main div {
+main .hero-container {
+  min-height: 100vh;
+  position: relative;
+}
+main .hero-container .row {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
 }
-main div h1 a {
+main .hero-container .row h1 {
+  font-size: 3rem;
+}
+main .hero-container .row h1 a {
   background: yellow;
   color: #222;
   text-decoration: none;
+}
+main .hero-container .row p {
+  text-align: center;
+}
+main .about-container {
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+}
+main .work-container {
+  min-height: 100vh;
 }
 
 footer .footer-top {
