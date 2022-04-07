@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
 
 $font-stack: 'Lato', sans-serif;
-$bg-color-primary : rgb(49, 49, 49);
-$bg-color-secoundary : white;
-$text-color-primary : black;
+$bg-color-primary : white;
+$bg-color-secondary : #222;
+$bg-color-tertiary : #333;
+$text-color-primary : #222;
 $text-color-secoundary : white;
+$text-color-tertiary : yellow;
 
 
 
@@ -17,10 +19,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: $font-stack;
+    scroll-behavior: smooth;
 }
 
 header {
-    background-color: $bg-color-secoundary;
+    background-color: $bg-color-primary;
     nav {
         height: 4rem;
 
@@ -32,25 +35,39 @@ header {
             margin-top: .7rem;
             margin-left: .7rem;
             background: yellow;
+            font-weight: 700;
         }
     }
 }
 
 main {
     min-height: 100vh;
-    background-color: $text-color-secoundary;
+    background-color: $bg-color-primary;
     div {
         position: absolute;
         top: 50%;
         left: 50%;
         margin-right: -50%;
         transform: translate(-50%, -50%);
+        h1 {
+            a {
+                background: $text-color-tertiary;
+                color: $text-color-primary;
+                text-decoration: none;
+            }
+        }
     }
 }
 
 footer {
-    height:15rem;
-    background-color: $text-color-primary;
+    .footer-top {
+        height: 3rem;
+        background-color: $bg-color-tertiary;
+    }
+    .footer-bottom {
+        height: 17rem;
+        background-color: $bg-color-secondary;
+    }
 }
 
 
