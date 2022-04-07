@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+
+$font-stack: 'Lato', sans-serif;
+$bg-color-primary : rgb(49, 49, 49);
+$bg-color-secoundary : white;
+$text-color-primary : black;
+$text-color-secoundary : white;
+
+
+
+body {
+    background-color: $bg-color-primary;
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-stack;
+}
+
+header {
+    background-color: $bg-color-secoundary;
+    nav {
+        height: 4rem;
+
+        a {
+            position: absolute;
+            font-size: 2rem;
+            text-decoration: none;
+            color: $text-color-primary;
+            margin-top: .7rem;
+            margin-left: .7rem;
+            background: yellow;
+        }
+    }
+}
+
+main {
+    min-height: 100vh;
+    background-color: $text-color-secoundary;
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+footer {
+    height:15rem;
+    background-color: $text-color-primary;
+}
+
+
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+
